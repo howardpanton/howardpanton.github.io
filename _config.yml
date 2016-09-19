@@ -1,11 +1,11 @@
 # Site settings
-title: Clean Blog
+title: This is me
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
+email: howardpanton@gmail.com
+copyright_name: Howard Panton
 description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/"
-url: "http://yourdomain.com"
+baseurl: ""
+url: "https://howardpanton.github.io"
 twitter_username: SBootstrap
 github_username:  davidtmiller
 facebook_username:  StartBootstrap
