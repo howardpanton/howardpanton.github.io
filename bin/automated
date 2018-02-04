@@ -11,11 +11,11 @@ ORIGIN_URL=`git config --get remote.origin.url`
 echo "Started deploying"
 
 # Checkout master branch.
-if [ `git branch | grep master` ]
+if [ `git branch | grep gh-pages` ]
 then
-  git branch -D master
+  git branch -D gh-pages
 fi
-git checkout -b master
+git checkout -b gh-pages
 
 # Build site.
 yarn install --modules-folder ./_assets/yarn
