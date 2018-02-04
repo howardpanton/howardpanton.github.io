@@ -1,46 +1,55 @@
-# Ruby CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-ruby/ for more details
-#
 version: 2
 jobs:
   build:
-    environment:
-      USER_NAME: howardpanton
-      USER_EMAIL: howardpanton@gmail.com
-
+    branches:
+      ignore:
+        - master
     docker:
-      # specify the version you desire here
-       - image: circleci/ruby:2.4.1-node-browsers
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-
-
+      - image: circleci/node:8
+    working_directory: ~/repo
+    environment:
+      - SOURCE_BRANCH: default
+      - TARGET_BRANCH: master
     steps:
       - checkout
-
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
       - run:
-          name: install dependencies
+          name: Install dependencies
+          command: npm install
+          command: bin/setup
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Run tests
+          command: npm test
+      - deploy:
+          name: Deploy
           command: |
-            gem install bundler --conservative
-            bundle check || bundle install
-            bundle update
-            npm install yarn
-            yarn install --modules-folder ./_assets/yarn
+            if [ $CIRCLE_BRANCH == "master" ]; then
+              git config --global user.email $GH_EMAIL
+              git config --global user.name $GH_NAME
 
-    workflows:
-      version: 2
-      build-deploy:
-        jobs:
-          - build-job
-          - deploy-job:
-              requires:
-                - build-job
-              filters:
-                branches:
-                  only: master
-                commands:
-                  - ./bin/deploy
+              git clone $CIRCLE_REPOSITORY_URL out
+
+              cd out
+              git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+              git rm -rf .
+              cd ..
+
+              npm run build
+
+              cp -a build/. out/.
+
+              mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
+              cd out
+
+              git add -A
+              git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
+
+              git push origin $TARGET_BRANCH
+            fi
