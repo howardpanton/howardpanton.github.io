@@ -43,4 +43,4 @@ jobs:
                 branches:
                   only: master
                 commands:
-                  - ./bin/automated
+                  - ./bin/deploy
