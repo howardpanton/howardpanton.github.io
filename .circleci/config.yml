@@ -28,7 +28,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            bundle exec jekyll build
+            ./bin/setup
 
     workflows:
       version: 2
