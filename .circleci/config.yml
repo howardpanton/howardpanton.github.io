@@ -28,7 +28,12 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            ./bin/setup
+            gem install bundler --conservative
+            bundle check || bundle install
+            bundle update
+            npm install yarn
+            yarn install --modules-folder ./_assets/yarn
+
 
     workflows:
       version: 2
