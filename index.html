@@ -1,262 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chalk | The high quality, completely customizable, performant and 100% free blog template for Jekyll</title>
+  <meta name="description" content="Chalk uses all the basasest tools and merges them into one premium blogging theme.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Write your site description here. It will be used as your sites meta description as well!">
+  <meta property="og:title" content="The high quality, completely customizable, performant and 100% free blog template for Jekyll">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/">
+  <meta property="og:description" content="Chalk uses all the basasest tools and merges them into one premium blogging theme.">
+  <meta property="og:site_name" content="Chalk">
 
-    <title>Clean Blog</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://localhost:4000/">
+  <meta name="twitter:title" content="The high quality, completely customizable, performant and 100% free blog template for Jekyll">
+  <meta name="twitter:description" content="Chalk uses all the basasest tools and merges them into one premium blogging theme.">
 
-    <link rel="canonical" href="http://localhost:4000//">
+  
+    <meta property="og:image" content="http://localhost:4000/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="http://localhost:4000/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="//css/bootstrap.min.css">
+  <link href="http://localhost:4000/feed.xml" type="application/rss+xml" rel="alternate" title="Chalk Last 10 blog posts" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="//css/clean-blog.css">
+  
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="//css/syntax.css">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Clean Blog" />
-
+  
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+    <link rel="stylesheet" type="text/css" href="/assets/light-dd81b21ab090e25ca3de9c7f8a04c3ed3092374c826eb42b9fb7cac72c5f41e7.css">
+  
 </head>
 
-
 <body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="Chalk">Chalk</a>
+  <ul class="header-links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
 
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="//">Clean Blog</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="//">Home</a>
-                </li>
-                
-				
-                <li>
-                    <a href="//about/">About</a>
-                </li>
-				
-                
-				
-                <li>
-                    <a href="//contact/">Contact</a>
-                </li>
-				
-                
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
+        </a>
+      </li>
+    
+  </ul>
 </nav>
 
+        <ul class="article-list">
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/introducing-chalk" title="Introducing chalk">
+        <h5>
+          Introducing chalk
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('//img/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap test</span>
-                </div>
-            </div>
+        </h5>
+      </a>
+      <p>
+        
+          Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
+        sdsd
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 23, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            2 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/web">web</a>
+          
+            <a href="/tag/jekyll">jekyll</a>
+          
         </div>
-    </div>
-</header>
-
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-<div class="post-preview">
-    <a href="//2014/09/24/man-must-explore/">
-        <h2 class="post-title">            Man must explore, and this is exploration at its greatest
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Problems look mighty small from 150 miles up
-        </h3>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 24, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="//2014/09/18/i-believe/">
-        <h2 class="post-title">            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 18, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="//2014/08/24/science-has-not-yet-mastered-prophecy/">
-        <h2 class="post-title">            Science has not yet mastered prophecy
-        </h2>
-        
-        <h3 class="post-subtitle">
-            We predict too much for the next year and yet far too little for the next ten.
-        </h3>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on August 24, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="//2014/07/08/failure-is-not-an-option/">
-        <h2 class="post-title">            Failure is not an option
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-        </h3>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on July 8, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="//2014/07/01/dreams/">
-        <h2 class="post-title">            The dreams of yesterday are the hopes of today and the reality of tomorrow.
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on July 1, 2014</p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
+      </div>
     </li>
-    
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/configuring-chalk" title="How to configure Chalk">
+        <h5>
+          How to configure Chalk
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          Learn more about the config file for Chalk and how to set it up properly.
+        sdsd
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 22, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            5 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/web">web</a>
+          
+            <a href="/tag/jekyll">jekyll</a>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="article-list-item scrollappear">
+      <a href="/posts/chalk-sample-post-with-all-elements" title="Chalk sample post with all elements">
+        <h5>
+          Chalk sample post with all elements
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+  <use href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right" xlink:href="/assets/arrow-right-05feb9da52810d15348895a9a885c61803f4d2ae681b4fc442b285fef184dd2b.svg#icon-arrow-right"></use>
+</svg>
+
+        </h5>
+      </a>
+      <p>
+        
+          Have a look at all the predesigned elements you can use in Chalk.
+        sdsd
+      </p>
+      <div class="article-list-footer">
+        <span class="article-list-date">
+          December 21, 2017
+        </span>
+        <span class="article-list-divider">-</span>
+        <span class="article-list-minutes">
+          
+          
+            2 minute read
+          
+        </span>
+        <span class="article-list-divider">-</span>
+        <div class="article-list-tags">
+          
+            <a href="/tag/design">design</a>
+          
+            <a href="/tag/jekyll">jekyll</a>
+          
+        </div>
+      </div>
+    </li>
+  
+  
 </ul>
 
-
-		</div>
-	</div>
-</div>
-
-<hr>
-
-
-    <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="//feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://twitter.com/SBootstrap">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li>
-                        <a href="https://www.facebook.com/StartBootstrap">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li>
-                        <a href="https://github.com/davidtmiller">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li>
-                        <a href="mailto:your-email@yourdomain.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Your/Project/Corporate Name 2018</p>
-            </div>
-        </div>
-    </div>
+        <footer class="footer scrollappear">
+  <p>
+I'm a Web Developer, Design and UX enthusiast, I'm currently playing around with
+Docker, Kubernetes and Angular.
+  </p>
 </footer>
 
-<!-- jQuery -->
-<script src="//js/jquery.min.js "></script>
+      </div>
+    </div>
+  </main>
+  
 
-<!-- Bootstrap Core JavaScript -->
-<script src="//js/bootstrap.min.js "></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="//js/clean-blog.min.js "></script>
+<script type="text/javascript" src="/assets/vendor-2e5becc015a837c852edabccbc32f5a390d4afa7a2ca601db948ea5b9e50292a.js"></script>
 
 
-    
+  <script type="text/javascript" src="/assets/webfonts-e3010885de8c083c4b2935d463b1649e8796191a66a1b43bb87ef04bbcce420d.js"></script>
 
+
+
+  <script type="text/javascript" src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js"></script>
+
+
+<script type="text/javascript" src="/assets/application-cd43a7f9bd8a08997bb19229cd040e7129ede0a1adf77c693b5835c9f8c2a4b1.js"></script>
 
 </body>
-
 </html>
