@@ -3,9 +3,6 @@ jobs:
   build:
     USER_NAME: howardpanton
     USER_EMAIL: howardpanton@gmail.com
-    branches:
-      ignore:
-        - master
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
     working_directory: ~/repo
