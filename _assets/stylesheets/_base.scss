@@ -31,6 +31,21 @@ body {
 p {
   margin: 0;
   font-weight: $base-font-weight;
+  margin-bottom: 20px;
+
+  a {
+    color: $base-accent-color;
+    overflow: auto;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-bottom: 1px solid #615b5b;
+    text-decoration: none;
+    transition: color $base-transition-speed linear;
+    &:hover,
+    &:active {
+      background: #f9f215;
+    }
+  }
 }
 
 b,
@@ -51,14 +66,14 @@ h6 {
 
 h1 {
   font-size: $base-font-size * 1.6;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -.03em;
   color: $article-header-title-color;
 }
 
 h2 {
   font-size: $base-font-size * 1.5;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h3 {

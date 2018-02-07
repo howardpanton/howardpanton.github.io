@@ -1,14 +1,14 @@
 # Mandatory settings
 
-blog_theme: dark # Or use dark
-name: /Users/howardpanton
+blog_theme: light # Or use dark
+name: This is me.
 paginate: 25
-url: # add your site url (format: https://example.com)
+url: https://howardpanton.github.io
 
 
 # Optional settings
 
-about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
@@ -22,7 +22,7 @@ social:
   github: howardpanton
   linkedin: howardpanton
   twitter: howardpanton
-  email: howardpanton@gmail.com
+  email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
   ethereum: # Add your Ethereum link or address
   gitlab: # Add your GitLab handle
@@ -30,13 +30,13 @@ social:
   twitch: # Add your Twitch handle
   discord: # Add you Discord server invitation ID
   tumblr: # Add your Tumblr handle
-  bitbucket: # Add your Bitbucket handle
+  bitbucket: howardpanton
   docker: howardpanton
-  instagram: howardpanton
+  instagram: # Add your Instagram handle
   keybase: # Add your Keybase handle
   medium: # Add your Medium handle
   spotify: # Add your Spotify handle
-  stackoverflow: # Add your Stack Overflow ID number
+  stackoverflow: howardpanton
   steam: # Add your Steam handle
 
 
@@ -80,5 +80,3 @@ plugins:
   - jemoji
 paginate_path: /posts/page/:num/
 permalink: posts/:slug
-
-theme: jekyll-theme-hacker

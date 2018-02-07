@@ -3,60 +3,84 @@
 // =============================================================================
 
 .header-nav {
-  display: block;
-  padding: 75px 0 20px;
-  border-bottom: 1px solid $base-border-color;
+    display: block;
+    padding: 75px 0 20px;
+    border-bottom: 1px solid $base-border-color;
 }
 
 .header-logo {
-  display: inline-block;
-  font-family: $serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $header-logo-color;
-  text-decoration: none;
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+    font-size: 36px;
+    font-weight: 300;
+    color: $header-logo-color;
+    text-decoration: none;
 }
 
 .header-links {
-  float: right;
-  padding: 0;
-  margin: 15px 0 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
-    &:first-child {
-      margin-left: 0;
+    float: right;
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: middle;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            font-size: 18px;
+            color: $header-link-color;
+
+            svg {
+                    width: 16px;
+                    height: 16px;
+                    fill: $header-link-color;
+                }
+
+            &:hover svg {
+                fill: $header-link-color-hover;
+            }
+        }
     }
-    a {
-      font-size: 18px;
-      color: $header-link-color;
-      svg {
-        width: 16px;
-        height: 16px;
-        fill: $header-link-color;
-      }
-      &:hover svg {
-        fill: $header-link-color-hover;
-      }
-    }
-  }
 }
 
 @include breakpoint(extra-small) {
-  .header-nav {
-    text-align: center;
-  }
-  .header-links {
-    display: block;
-    float: none;
-    text-align: center;
-    li {
-      margin: 0 10px;
-      &:last-child {
-        margin-right: 0;
-      }
+    .header-nav {
+        text-align: center;
     }
-  }
+
+    .header-links {
+        display: block;
+        float: none;
+        text-align: center;
+
+        li {
+            margin: 0 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.about-text {
+    padding: 20px 0 0;
+
+    .highlight-keyword {
+        overflow: auto;
+        font-weight: 300;
+        padding: 2px 4px;
+        border-bottom: 1px solid #615b5b;
+        text-decoration: none;
+
+        &:hover {
+            background: #f9f215;
+        }
+    }
 }
