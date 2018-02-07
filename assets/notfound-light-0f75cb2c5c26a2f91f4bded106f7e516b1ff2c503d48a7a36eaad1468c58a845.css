@@ -419,14 +419,26 @@ body {
   margin: 0 auto;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.8;
   color: #615b5b;
   background: #fff; }
 
 p {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 300;
+  margin-bottom: 20px; }
+  p a {
+    color: #615b5b;
+    overflow: auto;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-bottom: 1px solid #615b5b;
+    text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear; }
+    p a:hover, p a:active {
+      background: #f9f215; }
 
 b,
 strong {
@@ -444,13 +456,13 @@ h6 {
 
 h1 {
   font-size: 25.6px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -.03em;
   color: #121111; }
 
 h2 {
   font-size: 24px;
-  font-weight: 400; }
+  font-weight: 300; }
 
 h3 {
   font-size: 20.8px;

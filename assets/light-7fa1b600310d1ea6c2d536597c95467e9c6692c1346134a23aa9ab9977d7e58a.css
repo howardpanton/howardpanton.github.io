@@ -538,14 +538,26 @@ body {
   margin: 0 auto;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.8;
   color: #615b5b;
   background: #fff; }
 
 p {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 300;
+  margin-bottom: 20px; }
+  p a {
+    color: #615b5b;
+    overflow: auto;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-bottom: 1px solid #615b5b;
+    text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear; }
+    p a:hover, p a:active {
+      background: #f9f215; }
 
 b,
 strong {
@@ -563,13 +575,13 @@ h6 {
 
 h1 {
   font-size: 25.6px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -.03em;
   color: #121111; }
 
 h2 {
   font-size: 24px;
-  font-weight: 400; }
+  font-weight: 300; }
 
 h3 {
   font-size: 20.8px;
@@ -781,9 +793,18 @@ img {
   .grid-cell.with-11off {
     margin-left: 0; } }
 .about {
-  padding: 100px 0; }
+  padding: 20px 0; }
   .about h1 {
     margin: 50px 0 15px; }
+
+button.cv {
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid #615b5b;
+  color: #615b5b; }
+  button.cv:hover {
+    background: #615b5b;
+    color: #ffffff; }
 
 .article {
   display: block;
@@ -985,16 +1006,16 @@ img {
 
 .header-logo {
   display: inline-block;
-  font-family: "Cormorant Garamond", Courier, serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 300;
   color: #000;
   text-decoration: none; }
 
 .header-links {
   float: right;
   padding: 0;
-  margin: 15px 0 0;
+  margin: 20px 0 0;
   list-style: none; }
   .header-links li {
     display: inline-block;
@@ -1024,6 +1045,17 @@ img {
       margin: 0 10px; }
       .header-links li:last-child {
         margin-right: 0; } }
+.about-text {
+  padding: 20px 0 0; }
+  .about-text .highlight-keyword {
+    overflow: auto;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-bottom: 1px solid #615b5b;
+    text-decoration: none; }
+    .about-text .highlight-keyword:hover {
+      background: #f9f215; }
+
 .highlight {
   padding: 25px;
   margin: 0;
