@@ -55,8 +55,7 @@ Docker version 17.12.0-ce, build c97c6d6
 {% endhighlight %}
 
 You should see the version number of your Docker build. Before we get in to setting
-up a web server, we will do a quick test and run the standard 'Hello World' Docker
-Image.
+up a web server, we will do a quick test and run the standard 'Hello World' Docker Image.
 
 {% highlight bash %}
 docker run hello-world
