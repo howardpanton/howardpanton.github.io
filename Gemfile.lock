@@ -146,8 +146,8 @@ DEPENDENCIES
   jemoji
   mini_magick
   sass
-  sprockets (= 4.0.0.beta6)
+  sprockets
   uglifier
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

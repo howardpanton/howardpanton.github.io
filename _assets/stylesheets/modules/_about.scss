@@ -15,9 +15,13 @@ button.cv {
   border: 1px solid #615b5b;
   color: #615b5b;
 
+    a {
+      text-decoration: none;
+    }
+
   &:hover {
-    background: #615b5b;
-    color: #ffffff;
+    background: #f9f215;
+    color: #615b5b;
   }
 }
 
